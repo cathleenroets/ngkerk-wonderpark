@@ -3,51 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to NG Kerk Wonderpark - Access member features.">
   <title>Sign In - NG Kerk Wonderpark</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="left-section">
+      <a href="index.html" class="brand">NG Kerk Wonderpark</a>
+      <div class="auth-links">
+        <a href="signin.html" class="btn-auth" class="active">Sign In</a>
+        <a href="signup.html" class="btn-auth btn-signup">Sign Up</a>
+      </div>
+    </div>
+    <button class="hamburger hamburger--spin" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <ul class="nav-links" id="nav-links" aria-hidden="true">
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+      <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
+      <li><a href="needs.html"><i class="fas fa-hand-holding-heart"></i> Needs & Offers</a></li>
+      <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+      <li><a href="donate.html"><i class="fas fa-donate"></i> Donate</a></li>
+      <li><a href="volunteer.html"><i class="fas fa-users"></i> Volunteer</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="menu-overlay" id="menu-overlay"></div>
+  </nav>
 
-<nav class="navbar">
-  <a href="index.html" class="brand">NG Kerk Wonderpark</a>
-</nav>
-
-<section class="auth-section">
-  <h2>Welcome Back</h2>
-  <form id="signin-form" class="auth-form">
-    <input type="email" id="signin-email" placeholder="Email" required>
-    <input type="password" id="signin-password" placeholder="Password" required>
-    <button type="submit">Sign In</button>
-  </form>
-  <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
-</section>
+  <main>
+    <section class="auth-section">
+      <h2 class="title">Welcome Back</h2>
+      <br>
+      <form id="signin-form" class="auth-form">
+        <input type="email" id="signin-email" placeholder="Email" required aria-label="Email">
+        <input type="password" id="signin-password" placeholder="Password" required aria-label="Password">
+        <button type="submit" id="signin-btn"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </section>
+  </main>
 
 <footer>
-    <div class="footer-container">
-      <div class="footer-section social">
-        <h4>Follow Us</h4>
-        <ul class="social-links">
-          <li><a href="https://www.facebook.com/groups/ngkerkwonderpark/?ref=share&mibextid=KtfwRi" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li><a href="https://www.instagram.com/ngkerkwonderpark?igsh=ODF2Z2xmMml0a2Yy" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://youtube.com/@ngwonderparklive?si=Ol0UXdWu9rTR7b7r" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
-          <li><a href="https://www.ngkerkwonderpark.co.za/" target="_blank"><i class="fas fa-globe"></i> Website</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-divider"></div>
-  
-      <div class="footer-section contact">
-        <h4>Contact Us</h4>
-        <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803</p>
-        <p><strong>Email:</strong> <a href="mailto:kantoor@ngkerkwonderpark.co.za">kantoor@ngkerkwonderpark.co.za</a></p>
-        <p><strong>Address:</strong> 1849 Berg Ave, Amandasig, Akasia, 0118</p>
-      </div>
+  <div class="footer-container">
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/groups/ngkerkwonderpark/?ref=share&mibextid=KtfwRi" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="https://www.instagram.com/ngkerkwonderpark?igsh=ODF2Z2xmMml0a2Yy" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://youtube.com/@ngwonderparklive?si=Ol0UXdWu9rTR7b7r" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="https://www.ngkerkwonderpark.co.za/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Website</a></li>
+      </ul>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 NG Kerk Wonderpark
+    <div class="footer-divider"></div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803</p>
+      <p><strong>Email:</strong> <a href="mailto:kantoor@ngkerkwonderpark.co.za">kantoor@ngkerkwonderpark.co.za</a></p>
+      <p><strong>Address:</strong> 1849 Berg Ave, Amandasig, Akasia, 0118</p>
     </div>
-  </footer>   
+  </div>
+  <div class="footer-bottom">&copy; 2025 NG Kerk Wonderpark</div>
+</footer>
 
-<script type="module" src="auth.js"></script>
+  <script type="module" src="auth.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
