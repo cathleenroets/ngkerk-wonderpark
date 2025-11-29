@@ -1,25 +1,29 @@
-<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact NG Kerk Wonderpark - Reach out for questions or involvement.">
-  <title>Contact - NG Kerk Wonderpark</title>
+  <meta name="description" content="Announcements from NG Kerk Wonderpark - Stay updated on church news and events.">
+  <title class="titles">Contact - NG Kerk Wonderpark</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="brand">NG Kerk Wonderpark</a>
-    <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="left-section">
+      <a href="index.html" class="brand">NG Kerk Wonderpark</a>
+      <div class="auth-links">
+        <a href="signin.html" class="btn-auth">Sign In</a>
+        <a href="signup.html" class="btn-auth btn-signup">Sign Up</a>
+      </div>
+    </div>
+    <button class="hamburger hamburger--spin" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
-    <ul class="nav-links" id="nav-links">
+    <ul class="nav-links" id="nav-links" aria-hidden="true">
       <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
       <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
@@ -27,22 +31,33 @@
       <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
       <li><a href="donate.html"><i class="fas fa-donate"></i> Donate</a></li>
       <li><a href="volunteer.html"><i class="fas fa-users"></i> Volunteer</a></li>
-      <li><a href="contact.html" aria-current="page"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
+    <div class="menu-overlay" id="menu-overlay"></div>
   </nav>
+
 
   <main>
     <section id="contact">
-      <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+      <h2 class="title">Contact Us</h2>
+      <br>
       <p>Reach out to NG Kerk Wonderpark for questions, support, or community involvement. We are here to serve through pastoral care, fellowship, and more.</p>
+      <br>
       <div class="contact-card">
         <p><strong>Address:</strong> 1849 Berglaan, Amandasig, Pretoria-Noord, 0118</p>
         <p><strong>Email:</strong> kantoor@ngkerkwonderpark.co.za</p>
         <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803 / 083 266 2804</p>
+
+        <br>
+
         <div class="contact-buttons">
           <button onclick="window.location='mailto:kantoor@ngkerkwonderpark.co.za'"><i class="fas fa-envelope"></i> Email Us</button>
           <button onclick="window.open('tel:0125491340')"><i class="fas fa-phone"></i> Call Us</button>
         </div>
+
+        <br> 
+        <br>
+
       </div>
       <div class="map-container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.8370788030293!2d28.082097315040634!3d-25.672072983678885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfd4e8c8e1c7d7%3A0x8e8e7d8e7d8e7d8e!2sNG%20Kerk%20Wonderpark!5e0!3m2!1sen!2sza!4v1697031234567!5m2!1sen!2sza" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Map of NG Kerk Wonderpark"></iframe>
@@ -51,31 +66,27 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section social">
-        <h4>Follow Us</h4>
-        <ul class="social-links">
-          <li><a href="https://www.facebook.com/groups/ngkerkwonderpark/?ref=share&mibextid=KtfwRi" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li><a href="https://www.instagram.com/ngkerkwonderpark?igsh=ODF2Z2xmMml0a2Yy" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://youtube.com/@ngwonderparklive?si=Ol0UXdWu9rTR7b7r" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
-          <li><a href="https://www.ngkerkwonderpark.co.za/" target="_blank"><i class="fas fa-globe"></i> Website</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-divider"></div>
-  
-      <div class="footer-section contact">
-        <h4>Contact Us</h4>
-        <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803</p>
-        <p><strong>Email:</strong> <a href="mailto:kantoor@ngkerkwonderpark.co.za">kantoor@ngkerkwonderpark.co.za</a></p>
-        <p><strong>Address:</strong> 1849 Berg Ave, Amandasig, Akasia, 0118</p>
-      </div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/groups/ngkerkwonderpark/?ref=share&mibextid=KtfwRi" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="https://www.instagram.com/ngkerkwonderpark?igsh=ODF2Z2xmMml0a2Yy" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://youtube.com/@ngwonderparklive?si=Ol0UXdWu9rTR7b7r" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="https://www.ngkerkwonderpark.co.za/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Website</a></li>
+      </ul>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 NG Kerk Wonderpark
+    <div class="footer-divider"></div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803</p>
+      <p><strong>Email:</strong> <a href="mailto:kantoor@ngkerkwonderpark.co.za">kantoor@ngkerkwonderpark.co.za</a></p>
+      <p><strong>Address:</strong> 1849 Berg Ave, Amandasig, Akasia, 0118</p>
     </div>
-  </footer>   
+  </div>
+  <div class="footer-bottom">&copy; 2025 NG Kerk Wonderpark</div>
+</footer>
 
   <script src="scripts.js"></script>
 </body>
