@@ -1,45 +1,54 @@
-<!-- volunteer.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Volunteer at NG Kerk Wonderpark - Join our team for events and outreach.">
-  <title>Volunteer - NG Kerk Wonderpark</title>
+  <meta name="description" content="Announcements from NG Kerk Wonderpark - Stay updated on church news and events.">
+  <title class="titles">Volunteer - NG Kerk Wonderpark</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <a href="index.html" class="brand">NG Kerk Wonderpark</a>
-    <button class="hamburger-menu" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div class="left-section">
+      <a href="index.html" class="brand">NG Kerk Wonderpark</a>
+      <div class="auth-links">
+        <a href="signin.html" class="btn-auth">Sign In</a>
+        <a href="signup.html" class="btn-auth btn-signup">Sign Up</a>
+      </div>
+    </div>
+    <button class="hamburger hamburger--spin" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
     </button>
-    <ul class="nav-links" id="nav-links">
+    <ul class="nav-links" id="nav-links" aria-hidden="true">
       <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
       <li><a href="announcements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
       <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
       <li><a href="needs.html"><i class="fas fa-hand-holding-heart"></i> Needs & Offers</a></li>
       <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
       <li><a href="donate.html"><i class="fas fa-donate"></i> Donate</a></li>
-      <li><a href="volunteer.html" aria-current="page"><i class="fas fa-users"></i> Volunteer</a></li>
+      <li><a href="volunteer.html" class="active"><i class="fas fa-users"></i> Volunteer</a></li>
       <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
+    <div class="menu-overlay" id="menu-overlay"></div>
   </nav>
+
 
   <main>
     <section id="volunteer">
-      <h2><i class="fas fa-users"></i> Join Our Volunteer Team</h2>
+      <h2 class="title">Join Our Volunteer Team</h2>
+      <br>
       <p>Become part of NG Kerk Wonderpark’s mission in outreach, discipleship, and service. Help with events, youth programs, and community initiatives.</p>
+      <br>
       <div class="cards-container">
         <div class="action-card">
           <i class="fas fa-envelope fa-3x"></i>
           <h3 style="color:black;">Sign Up via Email</h3>
-          <p style="color:black;">Contact us to learn about opportunities in our commissions like Uitreik or Jeug.</p>
+          <p style="color:black;">Contact us to learn about opportunities in our commissions.</p>
+          <br>
           <button onclick="window.location='mailto:kantoor@ngkerkwonderpark.co.za'"><i class="fas fa-envelope"></i> Sign Up</button>
         </div>
         <div class="action-card">
@@ -52,31 +61,27 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-section social">
-        <h4>Follow Us</h4>
-        <ul class="social-links">
-          <li><a href="https://www.facebook.com/groups/ngkerkwonderpark/?ref=share&mibextid=KtfwRi" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li><a href="https://www.instagram.com/ngkerkwonderpark?igsh=ODF2Z2xmMml0a2Yy" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-          <li><a href="https://youtube.com/@ngwonderparklive?si=Ol0UXdWu9rTR7b7r" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
-          <li><a href="https://www.ngkerkwonderpark.co.za/" target="_blank"><i class="fas fa-globe"></i> Website</a></li>
-        </ul>
-      </div>
-  
-      <div class="footer-divider"></div>
-  
-      <div class="footer-section contact">
-        <h4>Contact Us</h4>
-        <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803</p>
-        <p><strong>Email:</strong> <a href="mailto:kantoor@ngkerkwonderpark.co.za">kantoor@ngkerkwonderpark.co.za</a></p>
-        <p><strong>Address:</strong> 1849 Berg Ave, Amandasig, Akasia, 0118</p>
-      </div>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section social">
+      <h4>Follow Us</h4>
+      <ul class="social-links">
+        <li><a href="https://www.facebook.com/groups/ngkerkwonderpark/?ref=share&mibextid=KtfwRi" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+        <li><a href="https://www.instagram.com/ngkerkwonderpark?igsh=ODF2Z2xmMml0a2Yy" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://youtube.com/@ngwonderparklive?si=Ol0UXdWu9rTR7b7r" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="https://www.ngkerkwonderpark.co.za/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Website</a></li>
+      </ul>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 NG Kerk Wonderpark
+    <div class="footer-divider"></div>
+    <div class="footer-section contact">
+      <h4>Contact Us</h4>
+      <p><strong>Phone:</strong> 012 549 1340 / 012 006 0803</p>
+      <p><strong>Email:</strong> <a href="mailto:kantoor@ngkerkwonderpark.co.za">kantoor@ngkerkwonderpark.co.za</a></p>
+      <p><strong>Address:</strong> 1849 Berg Ave, Amandasig, Akasia, 0118</p>
     </div>
-  </footer>   
+  </div>
+  <div class="footer-bottom">&copy; 2025 NG Kerk Wonderpark</div>
+</footer>
 
   <script src="scripts.js"></script>
 </body>
