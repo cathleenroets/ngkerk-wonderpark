@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Banking - NG Kerk Wonderpark</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="left-section">
+      <a href="index.html" class="brand">NG Kerk Wonderpark</a>
+    </div>
+  </nav>
+
+  <section class="eft-section">
+    <h2 class="title">Online Banking</h2>
+<br>
+    <div class="eft-card">
+      <div class="eft-header">
+        <h3>NG Kerk Wonderpark – Banking details</h3>
+      </div>
+<br>
+      <div class="eft-body" style="padding: 1.3rem;">
+        <table class="table table-borderless">
+          <tr><td><strong>Name:</strong></td><td>NG Kerk Wonderpark</td></tr>
+          <tr><td><strong>Bank:</strong></td><td>ABSA</td></tr>
+          <tr><td><strong>Branch code:</strong></td><td>632 005</td></tr>
+          <tr><td><strong>Account type:</strong></td><td>Check account</td></tr>
+          <tr>
+            <td><strong>Account number:</strong></td>
+            <td>
+              146 016 5489
+              <button class="eft-copy-btn" onclick="copyToClipboard('1460165489')">
+                Copy
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Reference:</strong></td>
+            <td>Your name + "Donation"</td>
+          </tr>
+        </table>
+<br>
+        <div class="eft-footer">
+          <small>Thank you very much for your generous contribution!</small>
+        </div>
+      </div>
+    </div>
+<br>
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="donate.html" class="action-card">
+        <button style="background:#4ca1af; color:#fff; border:none; padding:0.8rem 1.5rem; border-radius:8px; cursor:pointer;">
+          <i class="fas fa-arrow-left"></i> Back to donations
+        </button>
+      </a>
+    </div>
+  </section>
+
+<script>
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text).then(function() {
+    alert("Rekeningnommer gekopieer: " + text);
+  });
+}
+</script>
+
+</body>
+</html>
