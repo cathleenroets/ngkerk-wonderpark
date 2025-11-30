@@ -25,11 +25,10 @@
   text-decoration: none;
 }
 
-/* Desktop Auth Links - hidden by default (mobile) */
+/* Desktop Auth Links */
 .auth-links {
-  display: none;
-  gap: 0.8rem;
-  align-items: center;
+  display: flex;
+  gap: 0.6rem;
 }
 
 .btn-auth {
@@ -70,9 +69,9 @@
 
 /* Desktop breakpoint */
 @media (min-width: 769px) {
-  .auth-links {
-      display: flex;     
-  }
+  .auth-links { gap: 1rem; }
+  .btn-auth { padding: 0.6rem 1rem; font-size: 0.95rem; }
+}
   
   .hamburger {
       display: none;    
@@ -81,7 +80,6 @@
   .navbar {
       padding: 1rem 3rem;
   }
-}
 
 @media (max-width: 480px) {
   .brand {
@@ -132,12 +130,12 @@
   }
   
   .nav-links a:hover {
-    background: rgba(255,255,255,0.3); /* Highlight only on hover */
+    background: rgba(255,255,255,0.3); 
   }
   
   .nav-links a.active,
   .nav-links a.active:hover {
-    background: none; /* Remove any persistent or hover highlight for active links */
+    background: none; 
   }
   
   /* Overlay */
