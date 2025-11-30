@@ -11,34 +11,39 @@
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="left-section">
-      <a href="index.html" class="brand">NG Kerk Wonderpark</a>
-      <div class="auth-links">
-        <a href="signin.html" class="btn-auth">Sign In</a>
-        <a href="signup.html" class="btn-auth btn-signup">Sign Up</a>
-      </div>
+    <a href="index.html" class="brand">NG Kerk Wonderpark</a>
+  
+    <!-- Auth buttons are now in the middle – visible on mobile, never hidden under hamburger -->
+    <div class="auth-links">
+      <a href="signin.html" class="btn-auth">Sign In</a>
+      <a href="signup.html" class="btn-auth btn-signup">Sign Up</a>
     </div>
-    <button class="hamburger hamburger--spin" id="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+  
+    <!-- Hamburger stays on the far right -->
+    <button class="hamburger hamburger--spin" id="menu-button" type="button" 
+            aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
+  
     <ul class="nav-links" id="nav-links" aria-hidden="true">
-      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="announcements.html" class="active"><i class="fas fa-bullhorn"></i> Announcements</a></li>
-      <li><a href="prayer.html"><i class="fas fa-praying-hands"></i> Prayer Requests</a></li>
-      <li><a href="needs.html"><i class="fas fa-hand-holding-heart"></i> Needs & Offers</a></li>
-      <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
-      <li><a href="donate.html"><i class="fas fa-donate"></i> Donate</a></li>
-      <li><a href="volunteer.html"><i class="fas fa-users"></i> Volunteer</a></li>
-      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="announcements.html" class="active">Announcements</a></li>
+      <li><a href="prayer.html">Prayer Requests</a></li>
+      <li><a href="needs.html">Needs & Offers</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
+  
     <div class="menu-overlay" id="menu-overlay"></div>
   </nav>
 
   <main>
     <section id="announcements">
-      <h2 class="title"> Announcements</h2>
+      <h3 class="title"> Announcements</h3>
       <br>
       <p>NG Kerk Wonderpark is a 7-star congregation living in the Kingdom of God through pastoral care, fellowship, outreach, discipleship, worship, healing, and service. Stay updated on our latest news, services, and community events.</p>
       <br>
