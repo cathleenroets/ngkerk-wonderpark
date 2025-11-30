@@ -10,6 +10,8 @@
   z-index: 1000;
   color: #fff;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  flex-wrap: wrap;           
+  gap: 1rem;                 
 }
 
 .brand {
@@ -22,7 +24,7 @@
 }
 
 /* Auth buttons – visible on mobile & desktop */
-.auth-mobile {
+.auth-links {
   display: flex;
   gap: 0.7rem;
   flex-direction: column;   
@@ -61,14 +63,11 @@
 /* DESKTOP: horizontal buttons */
 @media (min-width: 769px) {
   .navbar { padding: 1rem 3rem; }
-
   .brand { font-size: 1.8rem; }
-
-  .auth-mobile {
+  .auth-links {            /* ← was .auth-mobile */
     flex-direction: row;    
     gap: 1rem;
   }
-
   .btn-auth {
     padding: 0.6rem 1.3rem;
     font-size: 1rem;
@@ -79,6 +78,7 @@
 @media (max-width: 380px) {
   .navbar { padding: 0.8rem 1rem; }
   .brand { font-size: 1.4rem; }
+  .auth-links { gap: 0.5rem; }                    /* ← add this */
   .btn-auth { font-size: 0.9rem; padding: 0.5rem 0.9rem; }
 }
   
